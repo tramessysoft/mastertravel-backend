@@ -17,28 +17,39 @@ return new class extends Migration
             $table->BigInteger('user_id'); // vehicle belongs to a user
             $table->string('start_date');
             $table->string('end_date')->nullable();
-            $table->string('customer')->nullable();
             $table->string('branch_name')->nullable();
-            $table->string('load_point')->nullable();
-            $table->string('additional_load')->nullable();
-            $table->string('unload_point')->nullable();
-            $table->string('transport_type')->nullable();
-            $table->string('trip_type')->nullable();
+            $table->string('start_point')->nullable();
+            $table->string('end_point')->nullable();
+            $table->string('seat_capacity')->nullable();
+            $table->string('coach_no')->nullable();
             $table->string('trip_id')->nullable();
-            $table->string('sms_sent')->nullable();
-            $table->string('vehicle_no')->nullable();
+            $table->string('bus_no')->nullable();
             $table->string('driver_name')->nullable();
-            $table->string('vehicle_category')->nullable();
-            $table->string('vehicle_size')->nullable();
-            $table->string('product_details')->nullable();
+            $table->string('supervisor_name')->nullable();
+            $table->string('bus_category')->nullable();
             $table->string('driver_mobile')->nullable();
+
             $table->string('challan')->nullable();
-            $table->string('driver_adv')->nullable();
+            $table->string('driver_commision')->nullable();
+            $table->string('helper_commision')->nullable();
+            $table->string('checker_commision')->nullable();
+            $table->string('wash')->nullable();
+            $table->string('omit_khoraki')->nullable();
+            $table->string('supervisor_commision')->nullable();
+
+            // fuel 
+            $table->string('odometer_start')->nullable();
+            $table->string('odometer_end')->nullable();
+            $table->string('run_km')->nullable();
+            $table->string('kpl')->nullable();
+            $table->string('fuel_ltr')->nullable();
+            $table->string('fuel_cost')->nullable();
+
+
             $table->string('remarks')->nullable();
             $table->string('food_cost')->nullable();
             $table->string('total_exp')->nullable();
             $table->string('total_rent')->nullable();
-            $table->string('vendor_rent')->nullable();
             $table->string('advance')->nullable();
             $table->string('due_amount')->nullable();
             $table->string('parking_cost')->nullable();

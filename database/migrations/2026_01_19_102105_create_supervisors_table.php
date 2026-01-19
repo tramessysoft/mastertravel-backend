@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('helpers', function (Blueprint $table) {
+        Schema::create('supervisors', function (Blueprint $table) {
             $table->id();
             $table->BigInteger('user_id');
-            $table->string('helper_name')->nullable();
+            $table->string('supervisor_name')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
-            $table->string('salary')->nullable();
-            $table->string('bus_category')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('helpers');
+        Schema::dropIfExists('supervisors');
     }
 };

@@ -16,11 +16,11 @@ return new class extends Migration
             $table->BigInteger('user_id'); // vehicle belongs to a user
             $table->string('driver_name')->nullable();
             $table->string('driver_mobile')->nullable();
+            $table->string('bus_category')->nullable();
             $table->string('nid')->nullable();
             $table->string('address')->nullable();
             $table->string('emergency_contact')->nullable();
-            $table->string('opening_balance')->nullable();
-            $table->string('note')->nullable();
+            $table->string('remarks')->nullable();
             $table->string('lincense')->nullable();
             $table->string('expire_date')->nullable();
             $table->string('lincense_image')->nullable();

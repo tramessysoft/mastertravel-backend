@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('driver_name');
             $table->string('vehicle_name');
             $table->string('insurance_date')->nullable();
-            $table->string('vehicle_size')->nullable();
-            $table->string('vehicle_category')->nullable();
+            $table->string('seat_capacity')->nullable();
+            $table->string('bus_category')->nullable();
             $table->string('reg_zone')->nullable();
             $table->string('reg_serial')->nullable();
             $table->string('reg_no')->nullable();
@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('status')->nullable();
             $table->string('tax_date')->nullable();
             $table->string('route_per_date')->nullable();
+            $table->string('kpl')->nullable();
             $table->string('fitness_date')->nullable();
             $table->string('fuel_capcity')->nullable();
             $table->timestamps();
