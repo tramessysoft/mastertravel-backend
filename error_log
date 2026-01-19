@@ -1,0 +1,74 @@
+[27-Oct-2025 05:02:46 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:46 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:49 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:49 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:50 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:50 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:51 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:51 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Warning:  require(/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[27-Oct-2025 05:02:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tramessy/ajenterprise.tramessy.com/backend/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/tramessy/ajenterprise.tramessy.com/backend/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/tramessy/ajenterprise.tramessy.com/backend/index.php on line 14
+[06-Jan-2026 06:26:20 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Cloner.php on line 51
+[06-Jan-2026 06:28:06 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Cloner.php on line 51
+[06-Jan-2026 06:28:38 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Cloner.php on line 51
+[06-Jan-2026 06:30:22 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Cloner.php on line 51
+[06-Jan-2026 06:30:33 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Cloner.php on line 51
+[11-Jan-2026 12:15:10 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 193237800 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Decoders/FilePathImageDecoder.php on line 37
+[11-Jan-2026 12:15:18 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 193237800 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Decoders/FilePathImageDecoder.php on line 37
+[11-Jan-2026 12:15:20 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 193237800 bytes) in /home/tramessy/master.tramessy.com/backend/vendor/intervention/image/src/Drivers/Gd/Decoders/FilePathImageDecoder.php on line 37
