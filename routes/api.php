@@ -64,7 +64,6 @@ Route::prefix('v1')->group(function () {
     // });
     Route::post('/logout', [AuthController::class, 'logout']);
 
-
     // daily expense
     Route::apiResource('expense', DailyExpenseController::class);
 
@@ -83,8 +82,8 @@ Route::prefix('v1')->group(function () {
 
     // fuel 
     Route::apiResource('fuel', FuelController::class);
-    
-     Route::post('fuel/{id}', [FuelController::class, 'update']);
+
+    Route::post('fuel/{id}', [FuelController::class, 'update']);
 
     // fuel ledger
     Route::get('/fuelLedger', [FuelController::class, 'stock']);
@@ -109,49 +108,19 @@ Route::prefix('v1')->group(function () {
 
     Route::post('employee/{id}', [EmployeeController::class, 'update']);
 
-
-    // customer
-    Route::apiResource('customer', CustomerController::class);
-
-    // vendor
-    Route::apiResource('vendor', VendorController::class);
-
-    // vendor Payment
-    Route::apiResource('vendor-payment', VendorPaymentController::class);
-    Route::post('vendor-payment/{id}', [VendorPaymentController::class, 'update']);
-
-    // payment recieve
-    Route::apiResource('payment-recieve', PaymentRecieveController::class);
-    Route::post('payment-recieve/{id}', [PaymentRecieveController::class, 'update']);
     // supplier
     Route::apiResource('supplier', SupplierController::class);
-
-
     // branch ledger
     Route::apiResource('OfficeLedger', OfficeLedgerController::class);
 
-
-
     //   suppliier ledger
     Route::apiResource('supplierLedger', SupplierLedgerController::class);
-
-    //   Driver Ledger
-    Route::apiResource('driverLedger', DriverLedgerController::class);
-
-    //   Vendor Ledger
-    Route::apiResource('vendorLedger', VendorLedgerController::class);
-
-    //   Customer Ledger 
-    Route::apiResource('customerLedger', CustomerLedgerController::class);
-
 
     //   salary advanced
 
     Route::apiResource('salaryAdvanced', SalaryAdvController::class);
 
-
     Route::apiResource('attendence', AttendenceController::class);
-
 
     // rate
     Route::apiResource('rate', PriceRateController::class);
@@ -171,25 +140,11 @@ Route::prefix('v1')->group(function () {
     // requestion
     Route::apiResource('requestion', RequsitionController::class);
 
-
-
-
     // salary sheet
     Route::apiResource('salarySheet', SalarySheetController::class);
-
-
-
     Route::put('/salary-item/{id}', [SalarySheetController::class, 'updateSingle']);
-
-
 
     // invertory purchase
     Route::apiResource('inventroyPurchase', InvertoyPurchaseController::class);
-
-    // sales
-    Route::apiResource('sales', SalesController::class);
-
-
-    Route::get('stock', [SalesController::class, 'stock']);
   });
 });

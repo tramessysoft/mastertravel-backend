@@ -10,81 +10,64 @@ use Illuminate\Support\Facades\Auth;
 
 class DriverController extends Controller
 {
+
+
     public function index()
     {
-        $drivers = Driver::all();
-        return response()->json($drivers);
+        $Drivers = Driver::all();
+        return response()->json([
+            'success' => true,
+            'data' => $Drivers
+        ]);
     }
 
+    // save all data
     public function store(Request $request)
     {
 
+        $Driver = Driver::create($request->all() + ['user_id' => Auth::id()]);
 
-        $driver = Driver::create([
-            'user_id' => Auth::id(),
-            'driver_name' => $request->driver_name,
-            'driver_mobile' => $request->driver_mobile,
-            'emergency_contact' => $request->emergency_contact,
-            'opening_balance' => $request->opening_balance,
-            'nid' => $request->nid,
-            'address' => $request->address,
-            'note' => $request->note,
-            'lincense' => $request->lincense,
-            'vehicle_category' => $request->vehicle_category,
-            'expire_date' => $request->expire_date,
-            'status' => $request->status,
-        ]);
-
-        return response()->json(['message' => 'Driver created successfully', 'data' => $driver]);
-    }
-
-    public function show($id)
-    {
-        $driver = Driver::find($id);
-        if (!$driver) {
-            return response()->json(['message' => 'Driver not found'], 404);
-        }
-        return response()->json($driver);
-    }
-
-    public function update(Request $request, $id)
-    {
-        $driver = Driver::find($id);
-        if (!$driver) {
-            return response()->json(['message' => 'Driver not found'], 404);
-        }
-
-        // এখানে driver অবজেক্টের উপরই update চালাও
-        $driver->update([
-            'user_id'          => Auth::id(),
-            'driver_name'      => $request->driver_name,
-            'driver_mobile'    => $request->driver_mobile,
-            'emergency_contact' => $request->emergency_contact,
-            'opening_balance'  => $request->opening_balance,
-            'nid'              => $request->nid,
-            'address'          => $request->address,
-            'note'             => $request->note,
-            'lincense'         => $request->lincense, // এখানে কন্ডিশন দিলে আগেরটা থাকবে
-              'vehicle_category' => $request->vehicle_category,
-            'expire_date'      => $request->expire_date,
-            'status'           => $request->status,
-        ]);
 
         return response()->json([
-            'message' => 'Driver updated successfully',
-            'data'    => $driver->fresh() // আপডেটেড ডেটা দেখাবে
-        ]);
+            'success' => true,
+            'message' => 'Driver created successfully',
+            'data' => $Driver
+        ], 201);
+    }
+
+    // single data read
+    public function show($id)
+    {
+        $Driver = Driver::find($id);
+        if (!$Driver) {
+            return response()->json(['success' => false, 'message' => 'Driver not found'], 404);
+        }
+        return response()->json(['success' => true, 'data' => $Driver]);
     }
 
 
-    public function destroy($id)
+    // data update
+    public function update(Request $request, $id)
     {
-        $driver = Driver::where('user_id', Auth::id())->find($id);
-        if (!$driver) {
-            return response()->json(['message' => 'Driver not found'], 404);
+        $Driver = Driver::find($id);
+        if (!$Driver) {
+            return response()->json(['success' => false, 'message' => 'Driver not found'], 404);
         }
 
-        $driver->delete();
-        return response()->json(['message' => 'Driver deleted successfully']);
+        $Driver->update($request->all());
+        return response()->json(['success' => true, 'message' => 'Driver updated successfully', 'data' => $Driver]);
+    }
+
+
+    // delete record
+    public function destroy($id)
+    {
+        $Driver = Driver::find($id);
+        if (!$Driver) {
+            return response()->json(['success' => false, 'message' => 'Driver not found'], 404);
+        }
+
+        $Driver->delete();
+        return response()->json(['success' => true, 'message' => 'Driver deleted successfully']);
     }
 }

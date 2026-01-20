@@ -36,7 +36,6 @@ return new class extends Migration
             $table->string('wash')->nullable();
             $table->string('omit_khoraki')->nullable();
             $table->string('supervisor_commision')->nullable();
-
             // fuel 
             $table->string('odometer_start')->nullable();
             $table->string('odometer_end')->nullable();
@@ -44,8 +43,6 @@ return new class extends Migration
             $table->string('kpl')->nullable();
             $table->string('fuel_ltr')->nullable();
             $table->string('fuel_cost')->nullable();
-
-
             $table->string('remarks')->nullable();
             $table->string('food_cost')->nullable();
             $table->string('total_exp')->nullable();

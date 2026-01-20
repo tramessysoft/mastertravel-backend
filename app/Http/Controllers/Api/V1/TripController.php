@@ -42,127 +42,51 @@ class TripController extends Controller
         try {
             // Insert into trips table
             $trip = Trip::create([
-                'user_id'          => Auth::id(),
-                'customer'         => $request->customer,
-                'buyer_name'         => $request->buyer_name,
-                'invoice_no'         => $request->invoice_no,
-                'start_date'       => $request->start_date,
-                'end_date'         => $request->end_date,
-                'branch_name'      => $request->branch_name,
-                'load_point'       => $request->load_point,
-                'additional_load'  => $request->additional_load,
-                'unload_point'     => $request->unload_point,
-                'transport_type'   => $request->transport_type,
-                'trip_type'        => $request->trip_type,
-                'trip_id'          => $request->trip_id,
-                'sms_sent'         => $request->sms_sent,
-                'vehicle_no'       => $request->vehicle_no,
-                'driver_name'      => $request->driver_name,
-                'vehicle_category' => $request->vehicle_category,
-                'vehicle_size'     => $request->vehicle_size,
-                'product_details'  => $request->product_details,
-                'driver_mobile'    => $request->driver_mobile,
-                'challan'          => $request->challan,
-                'driver_adv'       => $request->driver_adv,
-                'remarks'          => $request->remarks,
-                'food_cost'        => $request->food_cost,
-                'total_exp'        => $request->total_exp,
+                'user_id'           => Auth::id(),
+                'start_date'        => $request->start_date,
+                'end_date'          => $request->end_date,
+                'branch_name'       => $request->branch_name,
+                'start_point'       => $request->start_point,
+                'end_point'         => $request->end_point,
+                'seat_capacity'     => $request->seat_capacity,
+                'coach_no'          => $request->coach_no,
+                'trip_id'           => $request->trip_id,
+                'bus_no'            => $request->bus_no,
+                'driver_name'       => $request->driver_name,
+                'supervisor_name'   => $request->supervisor_name,
+                'bus_category'      => $request->bus_category,
+                'driver_mobile'     => $request->driver_mobile,
+                'challan'           => $request->challan,
+                'driver_commision'  => $request->driver_commision,
+                'helper_commision'  => $request->helper_commision,
+                'checker_commision' => $request->checker_commision,
+                'supervisor_commision' => $request->supervisor_commision,
+                'wash'              => $request->wash,
+                'omit_khoraki'      => $request->omit_khoraki,
+                'odometer_start'    => $request->odometer_start,
+                'odometer_end'      => $request->odometer_end,
+                'run_km'            => $request->run_km,
+                'kpl'               => $request->kpl,
+                'fuel_ltr'          => $request->fuel_ltr,
+                'fuel_cost'         => $request->fuel_cost,
+                'remarks'           => $request->remarks,
+                'food_cost'         => $request->food_cost,
+                'total_exp'         => $request->total_exp,
                 'total_rent'        => $request->total_rent,
-
-                'c_adv'        => $request->c_adv,
-                'c_due'        => $request->c_due,
-
-                'vendor_rent'      => $request->vendor_rent,
-                'advance'          => $request->advance,
-                'due_amount'       => $request->due_amount,
-                'parking_cost'     => $request->parking_cost,
-                'night_guard'      => $request->night_guard,
-                'toll_cost'        => $request->toll_cost,
-                'feri_cost'        => $request->feri_cost,
-                'police_cost'      => $request->police_cost,
-                'chada'            => $request->chada,
-                'labor'            => $request->labor,
-                'challan_cost'     => $request->challan_cost,
-                'fuel_cost'     => $request->fuel_cost,
-                'c_address'     => $request->c_address,
-
-                'odometer_start'     => $request->odometer_start,
-                'odometer_end'     => $request->odometer_end,
-                'run_km'     => $request->run_km,
-                'req_fuel'     => $request->req_fuel,
-
-                'cargo_weight'     => $request->cargo_weight,
-                'cnf_bd'     => $request->cnf_bd,
-                'cnf_ind'     => $request->cnf_ind,
-                'tyer_maintaince'     => $request->tyer_maintaince,
-                'scale_bill'     => $request->scale_bill,
-
-                'd_day'     => $request->d_day,
-                'd_amount'     => $request->d_amount,
-                'd_total'     => $request->d_total,
-
-                'v_d_day'     => $request->v_d_day,
-                'v_d_total'     => $request->v_d_total,
-
-                'helper_name'         => $request->helper_name,
-                'others_cost'      => $request->others_cost,
-                'vendor_name'      => $request->vendor_name,
-                'additional_cost'  => $request->additional_cost,
-                'created_by'  => $request->created_by,
-                'status'           => "Pending",
-                'chalan_rec'           => "Pending",
+                'advance'           => $request->advance,
+                'due_amount'        => $request->due_amount,
+                'parking_cost'      => $request->parking_cost,
+                'night_guard'       => $request->night_guard,
+                'toll_cost'         => $request->toll_cost,
+                'feri_cost'         => $request->feri_cost,
+                'police_cost'       => $request->police_cost,
+                'others_cost'       => $request->others_cost,
+                'chada'             => $request->chada,
+                'labor'             => $request->labor,
+                'status'            => "Pending",
             ]);
 
-            // Insert into driver or vendor ledger based on transport type
-            if ($request->transport_type === "own_transport") {
-                DriverLedger::create([
-                    'user_id'          => Auth::id(),
-                    'date'             => $request->start_date,
-                    'driver_name'      => $request->driver_name,
-                    'trip_id'          => $trip->id,
-                    'load_point'       => $request->load_point,
-                    'unload_point'     => $request->unload_point,
-                    'driver_commission' => $request->driver_commission,
-                    'driver_adv'       => $request->driver_adv,
-                    'parking_cost'     => $request->parking_cost,
-                    'night_guard'      => $request->night_guard,
-                    'toll_cost'        => $request->toll_cost,
-                    'feri_cost'        => $request->feri_cost,
-                    'police_cost'      => $request->police_cost,
-                    'chada'            => $request->chada,
-                    'fuel_cost'     => $request->fuel_cost,
-                    'challan_cost'     => $request->challan_cost,
-                    'others_cost'      => $request->others_cost,
-                    'labor'            => $request->labor,
 
-
-                    'cargo_weight'     => $request->cargo_weight,
-                    'cnf_bd'     => $request->cnf_bd,
-                    'cnf_ind'     => $request->cnf_ind,
-                    'tyer_maintaince'     => $request->tyer_maintaince,
-                    'scale_bill'     => $request->scale_bill,
-
-
-                    'total_exp'        => $request->total_exp,
-                ]);
-            } else {
-                VendorLedger::create([
-                    'user_id'     => Auth::id(),
-                    'date'        => $request->start_date,
-                    'driver_name' => $request->driver_name,
-                    'trip_id'     => $trip->id,
-                    'load_point'  => $request->load_point,
-                    'unload_point' => $request->unload_point,
-                    'customer'    => $request->customer,
-                    'vendor_name' => $request->vendor_name,
-                    'vehicle_no'  => $request->vehicle_no,
-                    'total_rent'   => $request->total_exp,   // fixed
-                    'advance'     => $request->advance,
-                    'due_amount'  => $request->due_amount,
-                    'v_d_day'     => $request->v_d_day,
-                    'v_d_total'     => $request->v_d_total,
-                ]);
-            }
 
             // Insert into branch ledgers
             OfficeLedger::create([
@@ -198,28 +122,6 @@ class TripController extends Controller
                 'stock'      => $newStock,
             ]);
 
-            CustomerLedger::create([
-                'user_id'          => Auth::id(),
-                'working_date'  => $request->start_date,  // fixed spelling
-                'customer_name' => $request->customer,
-                'trip_id'       => $trip->id,
-                'chalan'       => $request->challan,
-                'load_point'    => $request->load_point,
-                'unload_point'  => $request->unload_point,
-                'vehicle_no'    => $request->vehicle_no,
-                'bill_amount'   => $request->total_rent,
-                // fixed
-                'd_day'     => $request->d_day,
-                'd_amount'     => $request->d_amount,
-                'd_total'     => $request->d_total,
-                'driver_name'   => $request->driver_name,
-                'c_adv'        => $request->c_adv,
-                'c_due'        => $request->c_due,
-
-
-
-                'chalan_rec'   => "pending",
-            ]);
 
 
 
